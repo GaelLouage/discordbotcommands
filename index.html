@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5 mb-4">Command List</h1>
+        <div class="accordion" id="commandAccordion">
+
+            <!-- default help -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="defaultHelpModuleHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#defaultHelpModuleCollapse" aria-expanded="false" aria-controls="defaultHelpModuleCollapse">
+                        ❓ DefaultHelpModule
+                    </button>
+                </h2>
+                <div id="defaultHelpModuleCollapse" class="accordion-collapse collapse" aria-labelledby="defaultHelpModuleHeading" data-bs-parent="#commandAccordion">
+                    <div class="accordion-body">
+                        <h5 class="mb-3">Help Command</h5>
+                        <p>This command displays the help information for all available commands.</p>
+                        <h6 class="mt-4">Usage:</h6>
+                        <pre class="bg-light p-2"><code>!help</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- // moviecomands -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="movieCommandsHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#movieCommandsCollapse" aria-expanded="false" aria-controls="movieCommandsCollapse">
+                        🎬 MovieCommands
+                    </button>
+                </h2>
+                <div id="movieCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="movieCommandsHeading" data-bs-parent="#commandAccordion">
+                    <div class="accordion-body">
+                        <h5>filmprovider 🔍</h5>
+                        <p>Obtenez les fournisseurs de location et d'achat de films dans une région spécifique (FR, BE ou CH) et affichez les détails du film.</p>
+                        <p><strong>Utilisation:</strong> !filmProvider &lt;region&gt; &lt;nomFilm&gt;. Exemple: !filmProvider FR Inception</p>
+                        <hr>
+                        <h5>film 🎥</h5>
+                        <p>Recherchez un film par nom et affichez ses détails.</p>
+                        <p><strong>Utilisation:</strong> !film &lt;nomFilm&gt;. Exemple: !film Inception</p>
+                        <hr>
+                        <h5>avenir 🔮</h5>
+                        <p>Affichez une liste de films à venir.</p>
+                        <p><strong>Utilisation:</strong> !aVenir</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- helpcommand -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="helpCommandsHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#helpCommandsCollapse" aria-expanded="false" aria-controls="helpCommandsCollapse">
+                        ❔ HelpCommands
+                    </button>
+                </h2>
+                <div id="helpCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="helpCommandsHeading" data-bs-parent="#commandAccordion">
+                    <div class="accordion-body">
+                        <p>Liste de toutes les commandes !</p>
+                        <p>Usage: !commandes</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NasaCommands -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="nasaImageDuJourHeading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nasaImageDuJourCollapse" aria-expanded="false" aria-controls="nasaImageDuJourCollapse">
+                    🚀 NasaCommands
+                  </button>
+                </h2>
+                <div id="nasaImageDuJourCollapse" class="accordion-collapse collapse" aria-labelledby="nasaImageDuJourHeading" data-bs-parent="#commandAccordion">
+                  <div class="accordion-body">
+                    <h3>nasaimagedujour 🖼️</h3>
+                    <p>Obtenez l'image du jour de la NASA.</p>
+                    <h4>Utilisation</h4>
+                    <p>!nasaImageDuJour</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--GameCommands  -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="gameCommandsHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gameCommandsCollapse" aria-expanded="false" aria-controls="gameCommandsCollapse">
+                        🎮 GameCommands
+                    </button>
+                </h2>
+                <div id="gameCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="gameCommandsHeading" data-bs-parent="#commandAccordion">
+                    <div class="accordion-body">
+                        <h5>lancerjeu 🕹️</h5>
+                        <p>Lance un jeu par son nom dans la base de données (accessible uniquement pour l'administrateur : Loganner pour le moment) Usage: !lancerJeu nomdujeu</p>
+                        <hr>
+                        <h5>ajouterjeu ➕</h5>
+                        <p>Ajoute un jeu dans la base de données. Usage: !ajouterJeu nomdujeu iddujeu (admin)</p>
+                        <hr>
+                        <h5>mettreajourjeu 🔄</h5>
+                        <p>Mise à jour d'un jeu (admin). Usage: !mettreAJourJeu anciennom nouveaunom iddujeu</p>
+                        <hr>
+                        <h5>joueursjeuxfavoriscommuns 🎲</h5>
+                        <p>Obtenez la liste des joueurs ayant des jeux favoris en commun. Usage: !joueursJeuxFavorisCommuns</p>
+                        <hr>
+                        <h5>supprimerjeu ❌</h5>
+                        <p>Pour supprimer un jeu de la base de données (admin). Usage: !supprimerJeu nomdujeu</p>
+                        <hr>
+                        <h5>listejeux 📋</h5>
+                        <p>Affiche tous les jeux de la base de données (admin). Usage: !listeJeux</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- AdminCommands -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="adminCommandsHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#adminCommandsCollapse" aria-expanded="false" aria-controls="adminCommandsCollapse">
+                        🔒 AdminCommands
+                    </button>
+                </h2>
+                <div id="adminCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="adminCommandsHeading" data-bs-parent="#commandAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>changernom ✏️: Change le nom d'un utilisateur. Utilisation: !changerNom &lt;idUser&gt; &lt;nouveauPseudo&gt;</li>
+                            <li>expulser 👢: Expulse un membre du serveur. Utilisation : !expulser @membre raison</li>
+                            <li>supprimermessages 🗑️: Supprime les messages du salon. Utilisation : !supprimerMessages</li>
+                            <li>ajoutercredit 💰: Ajouter des crédits à un utilisateur. Usage : !ajouterCredit &lt;utilisateur&gt; &lt;montant&gt;</li>
+                            <li>createrole 🛡: Créer un rôle : Usage : !createrole &lt;color&gt; &lt;nomDuRole&gt;</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+     <!-- censorcommands -->
+     <div class="accordion-item">
+        <h2 class="accordion-header" id="censorCommandsHeading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#censorCommandsCollapse" aria-expanded="false" aria-controls="censorCommandsCollapse">
+            🙊 CensorCommands
+          </button>
+        </h2>
+        <div id="censorCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="censorCommandsHeading" data-bs-parent="#commandAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>obtenirmotscensurés 🙊: Affiche la liste des mots censurés.</li>
+              <li>ajoutermotcensuré ➕: Ajoute un mot à la liste des mots censurés.</li>
+              <li>supprimermotcensuré ❌: Supprime un mot de la liste des mots censurés.</li>
+              <li>mettreajourmotcensuré 🔄: Met à jour un mot censuré.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- usercommands -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="userCommandsHeading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#userCommandsCollapse" aria-expanded="false" aria-controls="userCommandsCollapse">
+            👤 UserCommands
+          </button>
+        </h2>
+        <div id="userCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="userCommandsHeading" data-bs-parent="#commandAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>statsutilisateur 📈: Obtenir vos statistiques actuelles. Usage: !statsUtilisateur</li>
+              <li>setrole 🛡: Set yourself role if available: Usage : !setRole id</li>
+              <li>recompensejournaliere 🎁: Obtenez une récompense quotidienne. Usage: !recompenseJournaliere</li>
+              <li>creditsactuels 💰: get my credits. Usage: !creditsActuels</li>
+              <li>transferer 💸: Transférer de la monnaie virtuelle à un autre utilisateur. Utilisation : !transfer &lt;utilisateur&gt; &lt;montant&gt;</li>
+              <li>creebouton 🎛: Crée une commande personnalisée avec un bouton. Usage : !createButton &lt;nomDeCommande&gt; &lt;texteSurBouton&gt; &lt;texteÀEnvoyerDansLeCanal&gt;</li>
+              <li>cmd ⚙️: Démarre une commande personnalisée. Usage: !cmd &lt;nomCommande&gt;</li>
+              <li>getcommands 🔍: Affiche la liste de mes commandes personnalisées. Utilisation : !getCommands</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+            <!-- Add similar accordion items for each command group -->
+    <!-- pubg commands -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="pubgCommandsHeading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pubgCommandsCollapse" aria-expanded="false" aria-controls="pubgCommandsCollapse">
+            🔫 PUBGCommands
+          </button>
+        </h2>
+        <div id="pubgCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="pubgCommandsHeading" data-bs-parent="#commandAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>pubgplayerstats 📈: Obtenir les statistiques du joueur. Usage: !pubgPlayerStats</li>
+              <li>pubg 🔫: Obtenir les dernières statistiques de jeu (pubg) du joueur (uniquement accessible pour Admin:Loganner pour le moment) 'gardez à l'esprit que seules 10 requêtes par tranche de 10 minutes sont disponibles'. Usage: !pubg</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- voice recieveing -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="voiceRecieverCommandsHeading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#voiceRecieverCommandsCollapse" aria-expanded="false" aria-controls="voiceRecieverCommandsCollapse">
+            🎤 VoiceRecieverCommands
+          </button>
+        </h2>
+        <div id="voiceRecieverCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="voiceRecieverCommandsHeading" data-bs-parent="#commandAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>start 🎙️: Démarrer l'enregistrement vocal: Usage: !start</li>
+              <li>convertirvoixenmp3 🎵: Convertir l'enregistrement vocal en fichier MP3. Usage : !convertirVoixEnMp3</li>
+              <li>stop 🛑: Arrêter l'enregistrement vocal. Usage : !stop</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- song commands -->
+      
+<div class="accordion-item">
+    <h2 class="accordion-header" id="songCommandsHeading">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#songCommandsCollapse" aria-expanded="false" aria-controls="songCommandsCollapse">
+        🎵 SongCommands
+      </button>
+    </h2>
+    <div id="songCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="songCommandsHeading" data-bs-parent="#commandAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>jouerchanson 🎶: Joue une chanson dans le salon vocal. Usage : !jouerChanson nomDeLaChanson</li>
+          <li>quitter 🔇: Mettez fin à la transmission vocale pour lire l'audio. Usage : !quitter</li>
+          <li>obtenirchansons 💿: Obtenez la liste des chansons sur le serveur. Usage : !obtenirChansons</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!-- ReminderCommand -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="reminderCommandsHeading">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#reminderCommandsCollapse" aria-expanded="false" aria-controls="reminderCommandsCollapse">
+        ❓ ReminderCommand
+      </button>
+    </h2>
+    <div id="reminderCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="reminderCommandsHeading" data-bs-parent="#commandAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>fixeunrappel ⏰: Définissez une alarme à un moment précis pour un utilisateur spécifique et envoyez un message privé. ex (EU:22/04/2023 09:18:06) basé sur la région (US:04/22/2023 09:18:06) (votre message). Usage: !SetAlarm &lt;22/04/2023 09:18:06&gt; &lt;votre message&gt;</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- TriviaGameCommands -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="triviaGameCommandsHeading">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#triviaGameCommandsCollapse" aria-expanded="false" aria-controls="triviaGameCommandsCollapse">
+        ❓ TriviaGameCommands
+      </button>
+    </h2>
+    <div id="triviaGameCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="triviaGameCommandsHeading" data-bs-parent="#commandAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>stoptimer 🛑: Stop timer</li>
+          <li>startmovietriviagame ❓: Démarre jeu Trivia. Usage: !StartShortGame</li>
+          <li>reponse ❓: Réponse à un jeu-questionnaire sur les films. Si vous répondez correctement, vous gagnez 20 exp et 1 crédit. Utilisation : !Réponse &lt;option&gt;</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- WikiCommands -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="wikiCommandsHeading">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wikiCommandsCollapse" aria-expanded="false" aria-controls="wikiCommandsCollapse">
+        📖 WikiCommands
+      </button>
+    </h2>
+    <div id="wikiCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="wikiCommandsHeading" data-bs-parent="#commandAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>wikiwiki 🌐: Make a wikipedia request to get infromation about a certain thing. Usage: !WikiWiki &lt;thing&gt;</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--  ShopCommands -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="shopCommandsHeading">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shopCommandsCollapse" aria-expanded="false" aria-controls="shopCommandsCollapse">
+        🛒 ShopCommands
+      </button>
+    </h2>
+    <div id="shopCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="shopCommandsHeading" data-bs-parent="#commandAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>shopliste 📃: Obtenir la liste des magasins. Usage : !shopListe</li>
+          <li>changermonnom ✍️: Changez le nom d'un utilisateur. Usage : !changerMonNom &lt;nouveauNom&gt;</li>
+          <li>achetermovieroleitem 🎵: Acheter un rôle de la liste des magasins. Usage : !acheterItem &lt;id&gt;</li>
+          <li>telechargerchanson 📥: Téléchargez la chanson à partir d'un lien YouTube. Usage : !telechargerChanson &lt;lien&gt;</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- FavoriteGameCreater -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="favoriteGameCreatorHeading">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#favoriteGameCreatorCollapse" aria-expanded="false" aria-controls="favoriteGameCreatorCollapse">
+        🎮 FavoriteGameCreater
+      </button>
+    </h2>
+    <div id="favoriteGameCreatorCollapse" class="accordion-collapse collapse" aria-labelledby="favoriteGameCreatorHeading" data-bs-parent="#commandAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>creategame 🎮: Ajouter un nouveau jeu à la liste des jeux favoris. Usage : !CreateGame &lt;NomDuJeu&gt;</li>
+          <li>updategamebyid 🔧: Mettre à jour le jeu. Usage : !UpdateGame &lt;IDduJeu&gt; &lt;NouvelleMiseÀJour&gt;</li>
+          <li>deletegamebyid 🗑️: Supprimer un jeu par ID. Utilisation : !DeleteGame &lt;IDduJeu&gt;</li>
+          <li>getgamebyid 🔍: Obtenir un jeu par ID. Utilisation : !GetGameByID &lt;ID&gt;</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
