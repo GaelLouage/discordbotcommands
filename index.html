@@ -21,10 +21,9 @@
                 </h2>
                 <div id="defaultHelpModuleCollapse" class="accordion-collapse collapse" aria-labelledby="defaultHelpModuleHeading" data-bs-parent="#commandAccordion">
                     <div class="accordion-body">
-                        <h5 class="mb-3">Help Command</h5>
-                        <p>This command displays the help information for all available commands.</p>
-                        <h6 class="mt-4">Usage:</h6>
-                        <pre class="bg-light p-2"><code>!help</code></pre>
+                      <ul>
+                        <li>help ❓ : Cette commande affiche les informations d'aide pour toutes les commandes disponibles. Usage: !help</li>
+                      </ul>
                     </div>
                 </div>
             </div>
@@ -38,17 +37,12 @@
                 </h2>
                 <div id="movieCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="movieCommandsHeading" data-bs-parent="#commandAccordion">
                     <div class="accordion-body">
-                        <h5>filmprovider 🔍</h5>
-                        <p>Obtenez les fournisseurs de location et d'achat de films dans une région spécifique (FR, BE ou CH) et affichez les détails du film.</p>
-                        <p><strong>Utilisation:</strong> !filmProvider &lt;region&gt; &lt;nomFilm&gt;. Exemple: !filmProvider FR Inception</p>
-                        <hr>
-                        <h5>film 🎥</h5>
-                        <p>Recherchez un film par nom et affichez ses détails.</p>
-                        <p><strong>Utilisation:</strong> !film &lt;nomFilm&gt;. Exemple: !film Inception</p>
-                        <hr>
-                        <h5>avenir 🔮</h5>
-                        <p>Affichez une liste de films à venir.</p>
-                        <p><strong>Utilisation:</strong> !aVenir</p>
+                      <ul>
+                        <li>filmprovider 🔍 : Obtenez les fournisseurs de location et d'achat de films dans une région spécifique (FR, BE ou CH) et affichez les détails du film.
+                           Usage: !filmProvider &lt;region&gt; &lt;nomFilm&gt;</li>
+                        <li>film 🎥 : Recherchez un film par nom et affichez ses détails. !film &lt;nomFilm&gt;.</li>
+                        <li>avenir 🔮 : Affichez une liste de films à venir. Usage: !aVenir</li>
+                      </ul>
                     </div>
                 </div>
             </div>
@@ -58,15 +52,17 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="helpCommandsHeading">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#helpCommandsCollapse" aria-expanded="false" aria-controls="helpCommandsCollapse">
-                        ❔ HelpCommands
+                      ❔ HelpCommands
                     </button>
                 </h2>
                 <div id="helpCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="helpCommandsHeading" data-bs-parent="#commandAccordion">
                     <div class="accordion-body">
-                        <p>Liste de toutes les commandes !</p>
-                        <p>Usage: !commandes</p>
+                      <ul>
+                        <li>commandes ❔ : Liste de toutes les commandes. Usage: !commandes</li>
+                      </ul>
                     </div>
                 </div>
+
             </div>
 
             <!-- NasaCommands -->
@@ -78,10 +74,9 @@
                 </h2>
                 <div id="nasaImageDuJourCollapse" class="accordion-collapse collapse" aria-labelledby="nasaImageDuJourHeading" data-bs-parent="#commandAccordion">
                   <div class="accordion-body">
-                    <h3>nasaimagedujour 🖼️</h3>
-                    <p>Obtenez l'image du jour de la NASA.</p>
-                    <h4>Utilisation</h4>
-                    <p>!nasaImageDuJour</p>
+                    <ul>
+                      <li>nasaimagedujour 🖼️ : Obtenez l'image du jour de la NASA. Usage: !nasaImageDuJour</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -95,23 +90,13 @@
                 </h2>
                 <div id="gameCommandsCollapse" class="accordion-collapse collapse" aria-labelledby="gameCommandsHeading" data-bs-parent="#commandAccordion">
                     <div class="accordion-body">
-                        <h5>lancerjeu 🕹️</h5>
-                        <p>Lance un jeu par son nom dans la base de données (accessible uniquement pour l'administrateur : Loganner pour le moment) Usage: !lancerJeu nomdujeu</p>
-                        <hr>
-                        <h5>ajouterjeu ➕</h5>
-                        <p>Ajoute un jeu dans la base de données. Usage: !ajouterJeu nomdujeu iddujeu (admin)</p>
-                        <hr>
-                        <h5>mettreajourjeu 🔄</h5>
-                        <p>Mise à jour d'un jeu (admin). Usage: !mettreAJourJeu anciennom nouveaunom iddujeu</p>
-                        <hr>
-                        <h5>joueursjeuxfavoriscommuns 🎲</h5>
-                        <p>Obtenez la liste des joueurs ayant des jeux favoris en commun. Usage: !joueursJeuxFavorisCommuns</p>
-                        <hr>
-                        <h5>supprimerjeu ❌</h5>
-                        <p>Pour supprimer un jeu de la base de données (admin). Usage: !supprimerJeu nomdujeu</p>
-                        <hr>
-                        <h5>listejeux 📋</h5>
-                        <p>Affiche tous les jeux de la base de données (admin). Usage: !listeJeux</p>
+                      <ul>
+                        <li>ajouterjeu ➕ :  Lance un jeu par son nom dans la base de données (accessible uniquement pour l'administrateur : Loganner pour le moment) Usage: !lancerJeu &lt;nomdujeu&gt;</li>
+                        <li>mettreajourjeu 🔄 : Ajoute un jeu dans la base de données. Usage: !ajouterJeu &lt;nomdujeu&gt; &lt;iddujeu&gt; (admin command)</li>
+                        <li>joueursjeuxfavoriscommuns 🎲 : Mise à jour d'un jeu (admin). Usage: !mettreAJourJeu &lt;anciennom&gt; &lt;nouveaunom&gt; &lt;iddujeu&gt;</li>
+                        <li>supprimerjeu ❌ : Obtenez la liste des joueurs ayant des jeux favoris en commun. Usage: !joueursJeuxFavorisCommuns</li>
+                        <li>listejeux 📋 : Pour supprimer un jeu de la base de données (admin). Usage: !supprimerJeu &lt;nomdujeu&gt;</li>
+                      </ul>
                     </div>
                 </div>
             </div>
